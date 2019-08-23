@@ -1,15 +1,16 @@
 <template>
   <div id="app">
-    <router-link to="/"></router-link>
-    <router-view></router-view>
-    <!-- <div id="nav">
-     |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />-->
+    <home />
   </div>
 </template>
-
+<script>
+import home from "@/views/Home.vue";
+export default {
+  components: {
+    home
+  }
+};
+</script>
 <style lang="less">
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
